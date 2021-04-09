@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dip"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@drawable/bookstorebk" />
+
+    <TextView
+        android:id="@+id/lblLogin"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_alignLeft="@id/imageView"
+        android:text="Login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#454242"
+        android:textSize="18sp"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/lblUserID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblLogin"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:inputType="textPersonName"
+        android:paddingTop="10dp"
+        android:text="User Name"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtUserID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblLogin"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:layout_marginTop="-10dp"
+        android:layout_toRightOf="@id/lblUserID"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHighlight="#0B0A0A" />
+
+
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblUserID"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:inputType="textPersonName"
+        android:paddingTop="10dp"
+        android:text="Password"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/btnCheckUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblPassword"
+        android:layout_marginLeft="@dimen/padding_left"
+        android:onClick="checkExistingUser"
+        android:text="Login" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtUserID"
+        android:layout_marginTop="-10dp"
+        android:layout_toRightOf="@id/lblPassword"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/lblSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPassword"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/btnCheckUser"
+        android:clickable="true"
+        android:onClick="signup"
+        android:ems="10"
+        android:text="Sign up" />
+</RelativeLayout>

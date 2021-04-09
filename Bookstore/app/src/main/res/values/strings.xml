@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SOFE4640BookStore</string>
+    <dimen name="padding_left">15dp</dimen>
+</resources>

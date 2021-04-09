@@ -1,0 +1,135 @@
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp Users">
+    </TextView>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name">
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtFirstName"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="First Name">
+
+        </EditText>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name">
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtLastName"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Last Name">
+
+        </EditText>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username">
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtUsername"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="usern Name">
+
+        </EditText>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="password">
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+
+            android:text="passowrd">
+
+        </EditText>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email">
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:text="Email">
+
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addNewUser"
+        android:text="Save"></Button>
+
+
+
+
+</LinearLayout>
